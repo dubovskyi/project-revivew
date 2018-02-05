@@ -1,0 +1,63 @@
+body {
+    background-image: url(https://hdwallsource.com/img/2014/4/free-background-wallpaper-22918-23554-hd-wallpapers.jpg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+.central-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+h1 {
+    color: red;
+    font-size: 45px;
+    text-align: center;
+}
+h2 {
+    color: #a50606;
+    font-size: 40px;
+    
+}
+.head {
+    background-color: grey;
+    height: 75px;
+    font-size: 35px;
+    text-align: center;
+    opacity: 0.5;
+}
+p {
+    color: white;
+    font-size: 25px;
+    
+}
+.footer {
+   background-color: #3440aa;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    
+}
+#contacts {
+    border: 3px solid #999;
+    height: 250px;
+    width: 100%;
+    background-color: #dee0ef;
+}
+#fotos {
+  border: 3px blue #999;
+  overflow: scroll;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+#about-us {
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    
+}
