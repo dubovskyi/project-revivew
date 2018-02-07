@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Протипожежне обладнання</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
@@ -17,24 +18,18 @@
                 <a href="#contacts">Контакти</a>
             </nav>
         </header>
+        <br>
         <main class="main">
-        <h1>
-            <b>Протипожежне обладнання</b>
-        </h1>
-        <form>
-            <input type="text" name="search" placeholder="пошук">
-            <input type="submit" value="Пошук">
-        </form>
-        <figure class="central-image">
-            <img src="images/equipment3.jpg" alt="first image" width="600" height="400">
-        </figure>
-        
+            <h1>
+                <b>Протипожежне обладнання</b>
+            </h1>
             <section id="about-us">
                 <h2>Про нас</h2>
-                
-                <p> <img src="images/photo-aboutus.jpg" alt="second image" width="400" height="250">Наша компанія – це визнаний лідер на ринку охоронно-пожежних послуг в місті Львів та регіонах України.Ми надаємо повний комплекс послуг протипожежного захисту та технічної безпеки об'єктів різної категорії складності під ключ, забезпечуючи Вам спокій, якісний сервіс та вигідні ціни!
+                <p>
+                    <img src="images/photo-aboutus.jpg" alt="second image" width="400" height="250">Наша компанія – це визнаний лідер на ринку охоронно-пожежних послуг в місті Львів та регіонах України.Ми надаємо повний комплекс послуг протипожежного захисту та технічної безпеки об'єктів різної категорії складності під ключ, забезпечуючи Вам спокій, якісний сервіс та вигідні ціни!
        Більше 15 років досвіду.Репутація компанії перевірена роками успішної роботи та наявністю ліцензії з необмеженим терміном дії по всій Україні на весь спектр послуг безпеки.Починаючи з 2000 року, нашим головним завданням є створення комлексів безпеки.
-    </p>
+    
+                </p>
             </section>
             <section id="products-category">
                 <h2>Категорії товарів</h2>
@@ -65,72 +60,76 @@
             <p>Пожежний ствол - пристрій, який встановлюється на виході
                  напірної рукавної лінії, призначений для формування, спрямування
                  та (або) регулювання струменя вогнегасної речовини.</p>
-            <h2>
+            <section id="fotos">
+                <h2>
                     <b>Фотогалерея</b>
                 </h2>
-            <section id="fotos">
-                
                 <figure>
-                    <img src="images/aparatus2.jpg" alt="20151225104801.jpg" width="300" height="200"/>
-                    <img src="images/avtomatika.jpg" alt="ops.jpg" width="300" height="200"/>
-                    <img src="images/equipment.jpg" alt="201601271344041820406.jpg" width="300" height="200"/>
-                    <img src="images/kaska2.jpeg" alt="kaska2.jpeg" width="300" height="200"/>
-                    <img src="images/rukav.jpg" alt="rukav.jpg" width="300" height="200"/>
-                    <img src="images/kaska.jpeg" alt="kaska.jpeg" width="300" height="200"/>
-                    <img src="images/vohnehasnyk.jpg" alt="vohnehasnyk.jpg" width="300" height="200"/>
-                    <img src="images/stvol1.jpeg" alt="stvol1.jpeg" width="300" height="200"/>
+                    <img src="images/aparatus2.jpg" alt="Апарат АСВ.jpg" width="300" height="200"/>
+                    <img src="images/avtomatika.jpg" alt="Автоматика" width="300" height="200"/>
+                    <img src="images/equipment.jpg" alt="обладнання" width="300" height="200"/>
+                    <img src="images/kaska2.jpeg" alt="каска" width="300" height="200"/>
+                    <img src="images/rukav.jpg" alt="рукав" width="300" height="200"/>
+                    <img src="images/kaska.jpeg" alt="каска 2" width="300" height="200"/>
+                    <img src="images/vohnehasnyk.jpg" alt="вогнегасники" width="300" height="200"/>
+                    <img src="images/stvol1.jpeg" alt="ствол" width="300" height="200"/>
                 </figure>
             </section>
             <section id="movies">
                 <h2>
                     <b>Відеогалерея</b>
                 </h2>
-                <video src="avtomatika.mp4" width="400" height="300" controls></video>
-                <video src="kaska-pozharnaya.mp4" width="400" height="300" controls></video>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/0vVJUkZjSvA"></iframe>
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/58r_Kr8yqow"></iframe>
             </section>
             <section id="contacts">
                 <h2>
                     <b>Контакти</b>
                 </h2>
-                <form method="POST" action="https://formspree.io/dubovskyi12@ukr.net">
+                <form>
+                    <div id="s"></div>
                     <label>
                         Ім'я:
-            <input type="text" name="name" placeholder="Ім'я:" required>
+            <input type="text" id="visitor-name" placeholder="Ім'я">
                     </label>
                     <br>
                     <label>
                         e-mail:
-            <input type="email" name="email" placeholder="e-mail:" required>
+            <input type="email" id="visitor-email" placeholder="e-mail:">
                     </label>
                     <br>
                     <label>
                         Повідомлення:
-            <input type="text" name="message" placeholder="Повідомлення" required>
+            <input type="text" id="visitor-message" placeholder="Повідомлення">
                     </label>
                     <br>
-                    <input type="submit" value="Надіслати:">
+                    <input type="submit" id="visitor-submit" value="Надіслати:">
                     <input type="reset" value="Скинути">
                 </form>
             </section>
         </main>
         <footer>
-            <section class="icons"> 
-            <a href="https://www.facebook.com">
-                <img src="images/facebook-logo.png" alt="facebook.png" width="50" height="50">
-            </a>
-            <a href="https://www.youtube.com/watch?v=5pBcKKiZSGE">
-                <img src="images/youtube-logo.png" alt="youtube-logo.png" width="50" height="50">
-            </a>
-            <a href="https://www.google.com.ua/webhp?tab=mw">
-                <img src="images/gmail-logo.png" alt="gmail-logo.png" width="60" height="40">
-            </a>
+            <section id="icons">
+                <a href="https://www.facebook.com">
+                    <img src="images/facebook-logo.png" alt="facebook.png" width="50" height="50">
+                </a>
+                <a href="https://www.youtube.com/watch?v=5pBcKKiZSGE">
+                    <img src="images/youtube-logo.png" alt="youtube-logo.png" width="50" height="50">
+                </a>
+                <a href="https://www.google.com.ua/webhp?tab=mw">
+                    <img src="images/gmail-logo.png" alt="gmail-logo.png" width="60" height="40">
+                </a>
             </section>
-            <section class="text">
-            <p>моб. 096-78-71-521</p>
-            <p>тел. 032-35-47-289</p>
-            <p>http://dubovskyi12@ukr.net</p>
-            <p>м.Львів вул. Сахарова 45</p>
+            <section id="text">
+                <p>моб. 096-78-71-521</p>
+                <p>тел. 032-35-47-289</p>
+                <p>http://dubovskyi12@ukr.net</p>
+                <p>м.Львів вул. Сахарова 45</p>
             </section>
         </footer>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
